@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appXtura">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>xtura</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body ng-controller="HomeCtrl">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">
+      <img src="./assets/logo.png" class="img-fluid">
+      </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>          
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h3 class="animated fadeInDown">Racks <span>Industriales</span></h3>
+      <h2>Contamos con Racks para Almacén para distintos requerimientos, ya sea que busque uno que facilite el acceso a los productos 
+      almacenados, uno para productos de pequeñas o grandes dimensiones o incluso uno que aproveche todo el espacio posible, nosotros lo tenemos.</h2>
+              
+      <a href="#contact" class="btn-get-started scrollto">Contactanos</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Sobre noosotros</h2>
+          <h3>Conozca más <span>sobre nosotros</span></h3>
+          <p>Somos Fabricantes de Racks estantería y lockers a la medida.
+          </p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Siempre se nos hemos caracterizado por satisfacer las necesidades de sus clientes al 100%
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ofrecemos la posibilidad de crear proyectos hechos a la medida de cada situación</li>
+              <li><i class="ri-check-double-line"></i> Ofrecemos la posibilidad de crear proyectos hechos a la medida de cada situación</li>
+              <li><i class="ri-check-double-line"></i> Cada proyecto algo único y especial</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ofrecer Las Mejores Soluciones De Almacenaje Al Sector Industrial, Mediante Sistemas Y/O Productos Que Superen Las Expectativas De CALIDAD De Los 
+              Clientes En DISEÑO, FABRICACIÓN E INSTALACIÓN, Así Como Servicio Personalizado En La Pre-Venta Y Post-Venta.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <h3>Saber más <span>sobre nuestros servicios</span></h3>
+          <p>Somos una empresa dedicada a la fabricación de sistemas de almacenamiento industrial y comercial. Manufacturados con aceros de la mas alta calidad, perfección en sus acabados y el control de calidad que nos permiten garantizarle un producto confiable</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" ng-repeat="service in services">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ service.img_service }}" class="card-img-top" alt="{{ service.title }}">
+                <div class="card-body">
+                  <h5 class="card-title"> {{ service.title }}</h5>
+                  <p class="card-text">{{ service.description }}</p>                
+                </div>
+            </div>
+         </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+   
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Contactanos</h3>
+          <p> 
+          ¡Optimice su espacio de almacenamiento con soluciones de calidad incomparable! Ofrecemos sistemas industriales y comerciales fabricados 
+          con aceros de primera calidad. Garantice la eficiencia, resistencia y funcionalidad para su bodega. ¡Contáctenos hoy para transformar 
+          su espacio y potenciar el desarrollo de su negocio!
+
+          </p>
+          <a class="cta-btn" href="#contact">Contactar</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <h3>Nuestro <span>Trabajo</span></h3>
+          
+        </div>
+
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_03.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_04.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_05.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_06.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_07.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_08.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_09.jpg" class="img-fluid" alt="">            
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/rack/torres_10.jpg" class="img-fluid" alt="">            
+          </div>              
+        </div>
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <h3>Contactanos</h3>
+          
+        </div>
+
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.5424107180638!2d-99.18187179465438!3d19.49498618272731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f86e0d8bfef9%3A0x2f04786424af59dd!2sDipro%20Dir%20De%20Proyectos%20S.C.!5e0!3m2!1ses!2smx!4v1708759817847!5m2!1ses!2smx" style="border:0; width: 100%; height: 270px;"frameborder="0" allowfullscreen > </iframe>
+          
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Dirección:</h4>
+                <p>CALLE GUANAJUATO 202, int 7, Roma norte</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@xtura.store</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+52 5513 7927 18</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <div role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control input_contact" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control input_contact" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control input_contact" name="subject" id="subject" placeholder="Asunnto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control input_contact" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              
+              <div class="text-center"><button type="submit" onclick="send_message()">Enviar</button></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12 text-center footer-contact">
+            <h3>xtura</h3>
+            <p>
+              CALLE GUANAJUATO 202, int 7, Roma norte
+              <br><br>
+              <strong>Teléfono:</strong> +52 5513 7927 18<br>
+              <strong>Email:</strong> info@xtura.store<br>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/ -->
+          
+        </div>
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/app/main.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    function send_message(){
+      toastr.success('Gracias a la brevedad ')
+      var inputsContact = document.querySelectorAll('.input_contact');
+
+      inputsContact.forEach(function(input) {
+        input.value = ''; // Esto vacía el valor del input
+      });
+    }
+  </script>
+
+</body>
+
+</html>

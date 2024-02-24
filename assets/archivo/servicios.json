@@ -1,0 +1,51 @@
+{
+    "services":[{
+            "id":1,
+            "img_service":"assets/img/servicios/rack_in_drive.jpg",
+            "title": "Rack Drive In",
+            "description": "El rack drive in esta diseñado para almacenaje paletizado de alta densidad ideal para áreas con poco espacio.el rack drive in opera con un solo pasillo garantizandole el máximo aprovechamiento y rentabilidad de sus instalaciones."
+        },
+      {
+        "id":2,
+        "img_service":"assets/img/servicios/rack_selectivo.jpeg",
+        "title":"Rack Selectivo",
+        "description": "El rack selectivo permite el acceso directo a cada tarima para el adecuado control y rotación de sus productos e inventarios.El rack selectivo se adapta a todas sus necesidades de volumén, peso de sus productos y todo tipo de espacios."
+      },
+      {
+        "id":3,
+        "img_service":"assets/img/servicios/rack_selectivo.jpeg",
+        "title":"Micro Rack Selectivo",
+        "description": "El micro rack selectivo es ideal para el almacenaje manual de sus productos. El micro rack selectivo se adapta a todas sus necesidades de volumén y peso de sus productos y todo tipo de espacios."
+      },
+      {
+        "id":4,
+        "img_service":"assets/img/servicios/parrillas_rack.jpeg",
+        "title":"Parrillas para Rack",
+        "description": "Las parrillas para rack se utilizan como accesorio de seguridad y de carga para tarimas que de origen presentan daños visibles en su conformación o para almacenar diferentes medidas de tarimas.Las parrillas para rack estan diseñadas para carga paletizada o para carga en almacenaje tipo picking y son altamente recomendables para almacenes que cuenten con sistema de aspersores contra incendios."
+      },
+      {
+        "id":5,
+        "img_service":"assets/img/servicios/estanteria.jpeg",
+        "title":"Estantería para carga ligera y media",
+        "description": "La estantería de carga ligera y media esta diseñada para el almacenaje manual de una gran diversidad de productos. La estantería de carga ligera y media es un sistema simple y "
+      },
+      {
+        "id":6,
+        "img_service":"assets/img/servicios/estanteria_dos_niveles.jpeg",
+        "title":"Entrepisos y estantería de dos o más niveles",
+        "description": "Los entrepisos y rack a 2 y 3 niveles estan diseñados para duplicar o triplicar la superfice de espacio y el óptimo aprovechamiento de altura de sus instalaciones.Los entrepisos y rack a 2 o 3 niveles son ideales para áreas de oficinas, producción y en donde se requiere de almacenaje de alta densidad.  "
+      },
+      {
+        "id":7,
+        "img_service":"assets/img/servicios/convertidor_tarima.jpeg",
+        "title":"Convertidor de tarima estibable",
+        "description": "El convertidor de tarima estibale esta diseñado para el almacenaje paletizado de alta densidad en áreas de poco espacio.El convertidor de tarima estibale protege sus productos y es "
+      },
+      {
+        "id":8,
+        "img_service":"assets/img/servicios/lockers_metalicos.jpeg",
+        "title":"Lockers metálicos diferentes  medidas",
+        "description": "Los lockers metalicos estan diseñados para el confiable resguardo de articulos personales. Los lockers metalicos estan fabricados para uso rudo y continuo por su conformación de calibres y resistentes mecanismos y ensambles."
+      }      
+    ]
+  }
